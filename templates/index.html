@@ -41,6 +41,12 @@ ga('send', 'pageview');
 
 var myintervalid = setInterval(function() {ga('send', 'event', '15-seconds', 'bounce' );},15000);
 setTimeout(function(){clearInterval(myintervalid);},20000);
+
+var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
+if(isIE){
+ alert("Sorry. Internet Explorer is not fully supported by this app. Try Chrome, Safari or Firefox instead.");
+}
+else{}
 </script>
 
 
